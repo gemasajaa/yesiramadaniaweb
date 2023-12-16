@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Responsi Praktek</title>
+		<meta name=viewport content=width=device-width,initial-scale=1>
+		<style>
+			@font-face{
+				font-family: 'goodfont';
+				src:url('./more/media/goodfont.ttf');
+			}
+			::-webkit-scrollbar {
+				width: 0;
+			}
+			body{
+				padding:0;
+				margin:0;
+				font-family: goodfont;
+				background: aliceblue;
+
+			}
+			#app{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background:aliceblue;
+			}
+			.parent{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				color:gray;
+			}
+			#nextButton{
+				padding:10px 20px;
+				background:white;
+				cursor: pointer;
+				border-radius: 10px;
+				border:3px dotted gainsboro;
+				font-weight: bold;
+			}
+			#nextButton:hover{
+				background:red;
+				color:white;
+			}
+			#parentBio{
+				width: 400px;
+				height: 400px;
+				border-radius: 20px;
+				border:2px dotted gainsboro;
+				padding:20px;
+				background: white;
+			}
+			#upTitle{
+				font-size: 24px;
+				font-weight: bold;
+				padding-bottom:20px;
+				color:black;
+			}
+			#botTitle{
+				font-style: italic;
+			}
+			#smallTitle{
+				font-size: 14px;
+				margin-bottom:50px;
+			}
+			#bioBox{
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				padding:10px 0;
+				font-size: 14px;
+				border-bottom: 1px dotted gainsboro;
+				color:gray;
+			}
+			.smartWidth{
+				width: 50%;
+			}
+			.footer{
+				height:100px;
+				font-size:12px;
+			}
+			@media screen and (max-width:700px){
+				.smartWidth{
+					width: 80%;
+				}
+				.parent{
+					margin-top:40px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id=app>
+			<div class=parent style=margin-top:0;>
+				<div id=upTitle>Responsi Praktek</div>
+				<div id=botTitle>
+					Web data diri, Review Pemahaman dan Kritik Saran.
+				</div>
+				<div id=smallTitle>
+					- Yesi Ramadania
+				</div>
+				<div id=nextButton>Scroll Untuk Melanjutkan</div>
+			</div>
+			<div class=parent style=background:aliceblue;>
+				<div id="parentBio" style=height:auto;>
+					<div id=upTitle style="
+					">Data Diri</div>
+					<div style=text-align:center;>
+						<img src=./more/media/75142A98-9509-4319-9BCC-B0CE096F163B.JPG style="width:200px;height:200px;object-fit:cover;border-radius:50%;border:2px dotted;">
+					</div>
+					<div id=bioBox>
+						<div>
+							Nama
+						</div>
+						<div><b>Yesi Ramadania</b></div>
+					</div>
+					<div id=bioBox>
+						<div>
+							Tanggal Lahir
+						</div>
+						<div><b>22 Oktober 2005</b></div>
+					</div>
+					<div id=bioBox>
+						<div>
+							Npm
+						</div>
+						<div><b>C1C023012</b></div>
+					</div>
+					<div id=bioBox>
+						<div>
+							Kelas
+						</div>
+						<div><b>1A</b></div>
+					</div>
+					<div id=bioBox>
+						<div>
+							Asdos
+						</div>
+						<div><b>Mareta Aliana (G1A021038)</b></div>
+					</div>
+					<div id=bioBox>
+						<div>
+							Dosen Pengampu
+						</div>
+						<div><b>Irnanda Priyadi, S.T.,M.T.</b></div>
+					</div>
+					<div id=bioBox style=border-bottom:0;>
+						<div>
+							Prodi
+						</div>
+						<div><b>Akuntansi</b></div>
+					</div>
+				</div>
+			</div>	
+			<div class="parent" style=background:aliceblue>
+				<div style="
+					height: 80%;
+					background: white;
+					border:3px dotted gainsboro;
+					padding:20px;
+					border-radius: 20px;
+					display: flex;
+					flex-direction: column;
+				" class="smartWidth">
+					<div id=upTitle style=color:gray>Review Materi</div>
+					<div style="
+						height:100%;
+						border-radius: 20px;
+						border:2px dotted gainsboro;
+						overflow: auto;
+					">
+						<div style="
+							padding:30px;
+						">
+							<div style=font-size:18px;><b>Apa itu C++?</b></div>
+							<div>
+								<div style=padding:50px;text-align:center;>
+									<img src=./more/media/c++.png>
+								</div>
+								<div>
+									C++ (dibaca: C plus-plus) adalah bahasa pemrograman komputer yang dibuat oleh Bjarne Stroustrup, yang merupakan perkembangan dari bahasa C dikembangkan di Bell Labs (Dennis Ritchie). Pada awal tahun 1970-an, bahasa itu merupakan peningkatan dari bahasa sebelumnya, yaitu B. Pada awalnya, bahasa tersebut dirancang sebagai bahasa pemrograman yang dijalankan pada sistem Unix. Pada perkembangannya, versi ANSI (American National Standards Institute) pada bahasa pemrograman C menjadi versi dominan, meskipun versi tersebut sekarang jarang dipakai dalam pengembangan sistem dan jaringan maupun untuk sistem embedded.
+								</div>
+							</div>
+						</div>
+						<div style="
+							padding:30px;
+						">
+							<div style=font-size:18px;><b>Perulanagan / Loop dalam C++</b></div>
+							<div>
+								<div style=padding:50px;text-align:center;>
+									<img src=./more/media/loop.png style=width:300px;height:300px;object-fit:cover;>
+								</div>
+								<div>
+									Perulangan adalah suatu proses eksekusi statemen-statemen dalamsebuahprogram secara terus-menerus sampai terdapat kondisi untukmenghentikannya. Operasi perulangan / looping selalu dijumpai didalamberbagai bahasa pemrograman, hal tersebut karena struktur perulanganakansangat membantu dalam efisiensi program.Dalam C++ terdapat 3 macamstruktur perulangan, yaitu : Struktur For, Struktur While dan Struktur DoWhile.
+								</div>
+							</div>
+						</div>
+						<div style="
+							padding:30px;
+						">
+							<div style=font-size:18px;><b>Hypertext Markup Language / HTML</b></div>
+							<div>
+								<div style=padding:50px;text-align:center;>
+									<img src=./more/media/html.png style=width:300px;height:300px;object-fit:cover;>
+								</div>
+								<div>
+									Hypertext Markup Language (HTML) adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP. Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan untuk penampilan dokumen. Elemen HTML digambarkan oleh tag, ditulis menggunakan tanda kurung siku. Tag lain seperti <p> mengelilingi dan memberikan informasi tentang teks dokumen dan mungkin menyertakan tag lain sebagai sub-elemen. Peramban tidak menampilkan tag HTML, tetapi menggunakannya untuk menafsirkan konten halaman. HTML dapat menyematkan program yang ditulis dalam bahasa skrip seperti JavaScript, yang memengaruhi perilaku dan konten halaman web. Dimasukkannya CSS mendefinisikan tampilan dan tata letak konten. World Wide Web Consortium (W3C), mantan pengelola HTML dan pemelihara standar CSS saat ini, telah mendorong penggunaan CSS pada HTML presentasi eksplisit sejak 1997.
+								</div>
+							</div>
+						</div>
+						<div style="
+							padding:30px;
+						">
+							<div style=font-size:18px;><b>Cascading Style Sheets / CSS</b></div>
+							<div>
+								<div style=padding:50px;text-align:center;>
+									<img src=./more/media/css.png style=width:300px;height:300px;object-fit:cover;>
+								</div>
+								<div>
+									Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemrograman. Sama halnya styles dalam aplikasi pengolahan kata seperti Microsoft Word yang dapat mengatur beberapa style, misalnya heading, subbab, bodytext, footer, images, dan style lainnya untuk dapat digunakan bersama-sama dalam beberapa berkas (file). Pada umumnya CSS dipakai untuk memformat tampilan halaman web yang dibuat dengan bahasa HTML dan XHTML. CSS dapat mengendalikan ukuran gambar, warna bagian tubuh pada teks, warna tabel, ukuran border, warna border, warna hyperlink, warna mouse over, spasi antar paragraf, spasi antar teks, margin kiri, kanan, atas, bawah, dan parameter lainnya. CSS adalah bahasa style sheet yang digunakan untuk mengatur tampilan dokumen. Dengan adanya CSS memungkinkan kita untuk menampilkan halaman yang sama dengan format yang berbeda.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parent" style=background:aliceblue>
+				<div class=smartWidth>
+					<div id=upTitle>Kritik & Saran</div>
+					<div>
+						<div>
+							Saya ingin menyampaikan beberapa pemikiran saya terkait dengan pengalaman belajar saya dalam Bimbingan Kakak. Terlebih dahulu, saya ingin menyatakan bahwa kakak memiliki kemampuan yang luar biasa dalam menjelaskan materi dan saya sangat menghargai dedikasi yang kakak berikan. Namun, selama beberapa waktu belakangan, saya menyadari bahwa senyum kakak yang begitu manis kurang terlihat selama sesi pengajaran. Saya percaya senyum dapat menjadi aspek penting dalam menciptakan lingkungan belajar yang positif dan mendukung. Terutama ketika materi yang diajarkan bisa menjadi rumit, adanya senyum bisa membuat suasana lebih santai dan membantu mahasiswa merasa lebih nyaman. Saya paham bahwa setiap orang memiliki gaya mengajar masing-masing, dan ini hanyalah pendapat subjektif saya. Namun, saya berharap pertimbangan ini dapat menjadi bahan refleksi untuk lebih meningkatkan pengalaman belajar kami bersama. Terima kasih atas waktunya, dan saya berharap kita semua dapat terus berkembang bersama di dalam kelas.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parent" style=background:aliceblue>
+				<div class=smartWidth>
+					<div id=upTitle>The End</div>
+					<div>
+						<div>
+							"Ilmu pengetahuan adalah senjata terampuh untuk mengubah dunia" - Nelson Mandela
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parent footer">
+				Made With Love By Yesi.
+			</div>
+		</div>
+	</body>
+</html>
